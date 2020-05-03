@@ -8,16 +8,15 @@
       setTimeout(() => show=true, 0)
     });
 </script>
-
-<div class="content">
-  {#if show}
-  <div class={headerText}>
-    <div class={para} transition:fade>Hi, I'm</div>
-    <h1 transition:fade class={myName}>Venkateshwaran <span class="underline">Selvaraj</span></h1>
-    <div class={myDescription}>
-Currently, Frontend Engineer at <Link target="_blank" title="StackRoute Labs" href="https://www.stackroute.in/labs.html">StackRoute Labs</Link>. <br>
-Previously, Tech Debt at <Link target="_blank" title="Newslaundry.com" href="https://www.newslaundry.com">Newslaundry</Link>.
+  <div class="content">
+    {#if show}
+    <div class={headerText}>
+      <div class={para} transition:fade>Hi, I'm</div>
+      <h1 transition:fade class={myName}>Venkateshwaran <span class="underline">Selvaraj</span></h1>
+        <div class={myDescription}>
+  Currently, Frontend Engineer at <Link target="_blank" title="StackRoute Labs" href="https://www.stackroute.in/labs.html">StackRoute Labs</Link>. <br>
+  Previously, Tech Debt at <Link target="_blank" title="Newslaundry.com" href="https://www.newslaundry.com">Newslaundry</Link>.
+      </div>
     </div>
+    {/if}
   </div>
-  {/if}
-</div>

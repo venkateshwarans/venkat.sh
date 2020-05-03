@@ -1,13 +1,8 @@
 import emotion from 'emotion/dist/emotion.umd.min.js';
-
 const { css } = emotion;
 
-const brandColor = '#3e4346';
-const fontFamilySansSerif = "'Inter', sans-serif";
-
-
 export const myName = css`
-  color: ${brandColor};
+  color: var(--theme-color);
   max-width: 800px;
   -webkit-font-feature-settings: "ss03","zero","cv08","cv11" 1;
   font-feature-settings: "ss03","zero","cv08","cv11" 1;
@@ -34,6 +29,4 @@ export const link = css`
   font-weight: 600;
   color: #f74646;
   border-bottom: 4px solid #f7464696;
-  /* text-decoration: underline;
-  text-decoration-style: wavy; */
 `
