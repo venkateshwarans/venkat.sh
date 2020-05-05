@@ -2,6 +2,9 @@
 	import HomeHeader from '../components/HomeHeader.svelte';
 	import Tailwindcss from '../components/Tailwindcss.svelte';
 	import ThemeSwitcher from '../components/ThemeSwitcher.svelte';
+	  if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-worker.js');
+    }
 </script>
 
 <Tailwindcss />
