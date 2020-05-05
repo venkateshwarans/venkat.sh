@@ -3,9 +3,10 @@
   export let title;
   export let href;
   export let target;
+  export let rel = "noopener";
 </script>
 
 
-<a class={link} {title} {href} {target}>
+<a class={link} {title} {href} {target} {rel}>
   <slot></slot>
 </a>
